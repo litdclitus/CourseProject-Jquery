@@ -1,0 +1,226 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #c13434 , #58094f);}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 15vh;
+}
+
+.fixed-header {
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.btn-bar {
+    background: transparent;
+    border: none;
+    font-size: 3.5rem;
+    outline: none;
+    cursor: pointer;
+    height: 4rem;
+    margin: 1rem 1.5rem;
+    color: white;
+    transition: all .3s linear;
+    /* color: #e91e63 */
+}
+
+.fixed-btn-bar {
+    color: black;
+    background: transparent;
+    border: none;
+    font-size: 3.5rem;
+    outline: none;
+    cursor: pointer;
+    height: 4rem;
+    margin: 1rem 1.5rem;
+    transition: all .3s linear;
+}
+
+.fixed-btn-bar:hover {
+    color: #e91e63
+}
+
+.header button:hover {
+    color: #e91e63
+}
+
+.header img {
+    width: 8rem;
+    height: 8rem;
+    margin-top: -1.3rem;
+}
+
+.links-container {
+    height: 0;
+    overflow: hidden;
+    background-color: white;
+    transition: all .4s linear;
+}
+
+.links {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+    padding-left: 2rem;
+}
+
+.links li {
+    display: block;
+
+    transition: all .3s linear;
+}
+
+.links a {
+    letter-spacing: .1rem;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+.links a:hover {
+    color: #e91e63
+    padding-left: 1rem;
+}
+
+.banner {
+    display: grid;
+    place-items: center;
+    padding-top: 25vh;
+    color: white;
+    transition: all .4s linear;
+}
+
+.banner h1 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+
+.banner a {
+    margin-top: 3rem;
+    color: white;
+    text-decoration: none;
+    border: 1px white solid;
+    padding: .5rem 1.5rem .5rem 1.5rem;
+    font-size: 1.7rem;
+    letter-spacing: .2rem;
+    transition: all 0.4s linear;
+}
+
+.banner a:hover {
+    background-color: white;
+    color: #e91e63
+}
+
+.icon {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    height: 0;
+    overflow: hidden;
+    transition: all .3s linear;
+}
+
+.show-icon {
+    transition: all .3s linear;
+    height: 15vh;
+}
+
+.icon i {
+    font-size: 3rem;
+    margin: 1rem;
+    transition: all .3s linear;
+    cursor: pointer;
+
+}
+
+.icon i:hover {
+    font-size: 4rem;
+    color: #e91e63
+}
+
+
+
+
+
+.exercises {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(238, 238, 238);
+    position: relative;
+
+}
+
+.exercises h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.exercise-name {
+    color: #e91e63
+}
+
+.current-exercise {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 91%;
+}
+
+
+
+footer {
+    background-color: rgba(31, 31, 31, .8);
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: gray;
+    letter-spacing: .1rem;
+    line-height: 1.5rem;
+}
+
+.info-left {
+    padding: .8rem;
+
+}
+
+.info-right {
+    padding: .8rem;
+}

@@ -1,0 +1,401 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h3 {
+    font-family: cursive;
+}
+
+
+/*Area Square*/
+.area-square {
+    width: 100%;
+    height: 100%;
+    
+    margin-top: 10vh;
+    display: none;
+}
+
+.area-square table {
+    margin: auto;
+    background-color: rgb(241, 218, 176);
+}
+
+.area-square h3 {
+    background-color: orange;
+    width: 40vw;
+}
+
+input[name="dientich"] {
+    background-color: rgb(243, 197, 197);
+}
+.area-square table tr:first-child, tr:last-child{
+    text-align: center ;
+}
+
+
+
+
+/*Learning Result*/
+.learning-result {
+    width: 100%;
+    height: 100%;
+    
+    margin-top: 10vh;
+    display: none;
+
+}
+
+.learning-result table {
+    margin: auto;
+    background-color: rgb(238, 124, 168);
+}
+
+.learning-result table tr:first-child {
+    background-color: rgb(218, 51, 51);
+}
+
+.learning-result table tr:first-child, tr:last-child{
+    text-align: center ;
+}
+
+input[name="hocluc"],
+input[name="ketqua"],
+input[name="diemtb"] {
+    background-color: bisque;
+}
+
+
+    /*Find Year */
+
+.find-year{
+    width: 100%;
+    height: 100%;
+    display: none;
+    margin-top: 10vh;
+}
+.find-year table{
+    margin: auto;
+    background-color: aqua;
+    width: 50%;
+    text-align: center;
+}
+.find-year tr:first-child{
+    background-color: rgb(91, 91, 247);
+}
+.find-year input[type="button"]{
+    padding: .5rem;
+    color: red;
+    font-weight: 1000;
+}
+input[name="amlich"]{
+    background-color: rgb(226, 226, 166);
+    color: red;
+    font-weight: bold;
+}
+.find-year img{
+    width: 50vw;
+    height: 50vh;
+}
+
+    /*Find Day of Month*/
+
+.find-day-of-month{
+    width: 100%;
+    height: 100%;
+    margin-top: 10vh;
+    display: none;
+}
+.find-day-of-month table{
+    text-align: center;
+    margin:auto;
+    background-color:rgb(250, 186, 186);
+}
+input[name="thang"],
+input[name="nam"]{
+    width: 4rem;
+}
+.find-day-of-month tr:first-child{
+    background-color: rgb(233, 61, 61);
+}
+input[name="songay"]{
+    width: 100%;
+    background-color:rgb(255, 255, 167);
+    color: red;
+    font-weight: bold;
+}
+
+
+    /*Calculative Number of Chains*/
+
+.calculative-on-number-chains{
+    width: 100%;
+    height: 100%;
+    margin-top:10vh;
+    display: none;
+}
+.calculative-on-number-chains table{
+    background-color:rgb(255, 235, 198);
+    margin:auto;
+    width:50vw;
+}
+.calculative-on-number-chains td:first-child{
+    width:20vw;
+}
+input[name="numstart"],
+input[name="numend"]{
+    width:4rem;
+}
+input[name="sumnumber"],
+input[name="multinumber"],
+input[name="sumevennum"],
+input[name="sumoddnum"]{
+    background-color:rgb(255, 200, 200);
+    width:20rem;
+}
+.limited-num{
+    background-color:white;
+}
+.calculative-on-number-chains tr:first-child{
+    text-align: center;
+    background-color: orange;
+}
+
+
+
+    /*Print Chapter*/
+
+.print-chapter{
+    width: 100%;
+    height: 100%;
+    margin-top: 10vh;
+    text-align: center;
+    display:none;
+}
+.print-chapter table{
+    margin: auto;
+    background-color:rgb(204, 204, 243);
+}
+.print-chapter tr:first-child{
+    text-align: center ;
+    background-color:blue;
+    color: white;
+}
+.cl-red{
+    color:red;
+    font-weight: bold;
+}
+
+.result-chapter{
+    display: grid;
+    grid-template-columns:repeat(5,auto);
+    place-items: center;
+    
+}
+.chapter{
+    list-style-type: none;
+    display: block;
+    border: 1px black double;
+    margin: 1px;
+}
+.chapter li{
+    text-align:left;
+    padding:1px;
+}
+
+
+
+    /*Convert to String */
+
+.convert-string{
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 10vh;
+    text-align: center;
+    display: none;
+}
+.convert-string table{
+    margin: auto;
+    text-align: left;
+    background-color:rgb(143, 181, 250);
+    width: 100%;
+}
+.convert-string td:first-child{
+    width: 15rem;
+    
+}
+input[name="input-number"]{
+    width: 15rem;
+}
+input[name="output-string"]{
+    width: 100%;
+    text-align:left;
+    color: red;
+    font-weight: bold;
+    background-color:rgb(255, 255, 170);
+    cursor:none;
+}
+input[name="btn-convert"]{
+    background-color:#e91e63;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+.convert-string tr:first-child{
+    text-align: center !important;
+    background-color:#e91e63;
+    color:white;
+}
+
+
+    /*Bill*/
+.bill{
+    width:100%;
+    min-height: 100vh;
+    display: none;
+    
+    
+}
+.btn-bill{
+    
+    font-size: 2rem;
+    font-family:cursive;
+    border-radius: 1rem;
+    border:2px solid #e91e63;
+    padding: .5rem 1rem .5rem 1rem;
+    outline: none;
+    cursor: pointer;
+    margin-left: 612px;
+    
+}
+.btn-bill:hover{
+    background-color: aqua;
+    color: white;
+    border:3px solid white;
+    
+}
+.btn-selected{
+    font-size: 1.5rem;
+    padding:.2rem .2rem .2rem .2rem;
+    width: 4rem;
+    height: 2rem;
+    border: 1px blue solid;
+    border-radius: .5rem;
+    outline: none;
+    cursor: pointer;
+    margin: .3rem;
+}
+.space-btn{
+    margin-bottom: 1.4rem;
+}
+
+
+.bill-box{
+    width:50%;
+    min-height: 50vh;
+    display:flex;
+    flex-direction: column;
+    border: 4px blue solid;
+    display: none;
+    z-index: 5;
+}
+.bill-top{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin: 0 1.5rem 1.5rem 1.5rem
+}
+.bill-center{
+    display: flex;
+    flex-direction:column;
+    margin-top: 2.4rem;
+}
+.bill-bottom{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.bill-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: linear-gradient(blue,blue,white);
+    margin-bottom: 3rem;
+    width: 100%;
+}
+.bill-navigator-bar {
+    padding:.4rem;
+}
+.bill-icon img{
+    width: 1.2rem;
+}
+.bill-icon{
+    color: white;
+}
+.nav-bar{
+    border: none;
+    background: transparent;
+    color:white;
+    outline:none;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+.fa-window-close{
+    background-color:red;
+
+}
+.bill-left{
+    width:35%;
+    
+}
+.bill-right{
+    width:35%;
+    
+}
+.menu-original select{
+    width:100%;
+    border: 1px blue solid;
+}
+.menu-selected select{
+    width:100%;
+    border: 1px blue solid;
+}
+.bill-box option{
+    margin:.3rem;
+    padding:.1rem;
+    font-size: 1.1rem;
+}
+.bill-bottom{
+    margin:1.2rem;
+}
+.print-money{
+    min-width:40%;
+    color:blue;
+}
+.calculative-money{
+    min-width: 4rem;
+    border: 2px blue solid;
+    padding:.3rem;
+    cursor: pointer;
+    box-shadow: inside 0px 1px 3px blue;
+    border-radius: .3rem;
+}
+
+.notification-bill{
+    position: absolute;
+    bottom:15rem;
+    right: 15rem;
+    border: 4px blue solid;
+    display: none;
+    
+}
+.header-notifica{
+    text-align:right;
+    background: linear-gradient(blue,blue,white);
+    width: 100%;
+    
+}
+.ok-notifica{
+    position: relative;
+    left: 40%;
+}

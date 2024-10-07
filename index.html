@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+
+<head>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/src.css">
+    <script src="https://kit.fontawesome.com/776bbe23d6.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="header">
+                
+                <button id="nav-bar" class="btn-bar"><i class="fa fa-bars"></i></button>
+            </div>
+            <div class="links-container">
+                <ul class="links">
+                    <li><a class="scroll-link" href="#exercises" data-id="areasquare">Diện Tích Hình Chữ Nhật</a></li>
+                    <li><a class="scroll-link" href="#exercises" data-id="learningresult">Kết Quả Học Tập</a></li>
+                    <li><a class="scroll-link" href="#exercises" data-id="findyear">Tính năm âm lịch</a></li>
+                    <li><a class="scroll-link" href="#exercises" data-id="finddayofmonth">Tính ngày trong tháng</a></li>
+                    <li><a class="scroll-link" href="#exercises" data-id="calculativenumber">Tính Toán Trên Dãy Số</a></li>
+                    <li><a class="scroll-link" href="#exercises" data-id="printchapter">Bảng cửu chương</a></li>
+                    <li><a class="scroll-link" href="#exercises" data-id="tostring">Đổi số ra chữ</a></li>
+                    <li><a class="scroll-link" href="#exercises" data-id="bill">Tính tiền hoá đơn</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="banner">
+            <h2 id="icon">17520318 - Nguyễn Hải Đăng</h2>
+            <p>IE104.L11.CNCL - Võ Ngọc Tân</p>
+            <a href="#" class="more">More</a>
+           
+        </div>
+    </header>
+    <section class="exercises" id="exercises">
+        <h1>Exercise <span class="exercise-name" id="exercise-name">Box</span></h1>
+        <div class="current-exercise" id="current-exercise">
+            <div class="area-square" id="area-square">
+
+                <form action="">
+
+                    <table>
+                        <tr>
+                            <td colspan="2">
+                                <h3>Diện Tích Hình Chữ Nhật</h3>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Chiều Dài :</td>
+                            <td> <input type="text" name="chieudai" id="chieudai"></td>
+                        </tr>
+                        <tr>
+                            <td>Chiều Rộng :</td>
+                            <td> <input type="text" name="chieurong" id="chieurong"></td>
+                        </tr>
+                        <tr>
+                            <td>Diện Tích : </td>
+                            <td> <input type="text" name="dientich" id="dientich" readonly></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="button" name="tinh" id="cal-area" value="Tính"></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+
+            <div class="learning-result" id="learning-result">
+                <form action="">
+                    <table>
+                        <tr>
+                            <td colspan="2">
+                                <h3>Kết Quả Học Tập</h3>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Điểm HK1 :</td>
+                            <td><input type="text" name="diemhk1" id="diemhk1"></td>
+                        </tr>
+                        <tr>
+                            <td>Điểm HK2 :</td>
+                            <td><input type="text" name="diemhk2" id="diemhk2"></td>
+                        </tr>
+                        <tr>
+                            <td>Điểm TB :</td>
+                            <td><input type="text" name="diemtb" id="diemtb" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>Kết Quả :</td>
+                            <td><input type="text" name="ketqua" id="ketqua" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>Xếp Loại Học Lực :</td>
+                            <td><input type="text" name="hocluc" id="hocluc" readonly></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="button" name="btn" id="xemkq" value="Xem Kết Quả"></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+            <div class="find-year" id="find-year">
+                <form action="">
+                    <table>
+                        <tr>
+                            <td colspan="3"><h3>Tính Năm Âm Lịch</h3></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Năm Dương Lịch</td>
+                            <td></td>
+                            <td>Năm Âm Lịch</td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="duonglich" id="duonglich" ></td>
+                            <td><input type="button" name="convert" id="convert" value="=>"></td>
+                            <td><input type="text" name="amlich" id="amlich" readonly></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" style="height: 5rem;"><img id="img-chi" src="./images/ti.jpg" alt="ti"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+            <div class="find-day-of-month" id="find-day-of-month">
+                <form>
+                    <table>
+                        <tr>
+                            <td><h3>Tính Ngày Trong Tháng</h3></td>
+                        </tr>
+                        <tr>
+                            <td>Tháng/Năm : <input type="text" name="thang" id="nhapthang" maxlength="2"> / <input type="text" maxlength="4" name="nam" id="nhapnam"></td>
+                        </tr>   
+                        <tr>
+                            <td><input type="button" name="tinhngay" id="tinhngay"  value="Tính Số Ngày"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="songay" id="xuatngay" readonly></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+            <div class="calculative-on-number-chains" id="calculative-on-number-chains">
+                <form action="">
+                    <table>
+                        <tr>
+                            <td colspan="2"><h3>Tính Toán Trên Dãy Số</h3></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Giới hạn của dãy số</td>
+                            <td class="limited-num">Số bắt đầu : <input type="text" name="numstart" id="numstart"> Số kết thúc : <input type="text" name="numend" id="numend"></td>
+                        </tr>
+                        <tr>
+                            <td>Kết Quả:</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Tổng các số :</td>
+                            <td><input type="text" name="sumnumber" id="sumnumber" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>Tích các số : </td>
+                            <td><input type="text" name="multinumber" id="multinumber" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>Tổng số chẵn :</td>
+                            <td><input type="text" name="sumevennum" id="sumevennum" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>Tổng số lẻ :</td>
+                            <td><input type="text" name="sumoddnum" id="sumoddnum" readonly></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="button" name="cal-Chains" id="cal-chains" value="Tính toán"></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+            <div class="print-chapter" id="print-chapter">
+                <form action="">
+                    <table>
+                        <tr>
+                            <td colspan="2"><h3>In Bảng Cửu Chương</h3></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Bắt Đầu Từ : </td>
+                            <td><input type="text" name="chapterstart" id="chapter-start"></td>
+                        </tr>
+                        <tr>
+                            <td>Kết Thúc Từ : </td>
+                            <td><input type="text" name="chapterend" id="chapter-end"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" ><input type="button" name="btnprint" id="btn-print" value="In Bảng Cửu Chương"></td>   
+                            <td></td>
+                        </tr>
+                    </table>
+                </form>
+                <p>Kết quả sau khi nhấn <span class="cl-red">In Bảng Cửu Chương</span></p>
+                <div class="result-chapter" id="result-chapter">
+                    
+                </div>
+            </div>
+
+
+            <div class="convert-string" id="convert-string">
+                <form action="">
+                    <table>
+                        <tr>
+                            <td colspan="2"><h3>Đọc Số</h3></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Nhập Số ( 0 -> 999 Tỷ) </td>
+                            <td><input type="text" name="input-number" id="input-number-to-convert"><input type="button" name="btn-convert" id="btn-convert" value="Đọc Số"></td>
+                        </tr>
+                        <tr>
+                            <td>Bằng Chữ :</td>
+                            <td><input type="text" name="output-string" id="output-string" readonly></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+            <div class="bill" id="bill">
+                <button class="btn-bill" id="btn-bill">BILL</button>
+                <div class="bill-box" id="bill-box">
+                    <div class="bill-header">
+                        <div class="bill-icon">
+                            <img src="./images/bill-icon.png" alt="bill icon">Tính Tiền
+                        </div>
+                        <div class="bill-navigator-bar">
+                            <button class="nav-bar"><i class="fas fa-window-minimize"></i></button>
+                            <button class="nav-bar"><i class="far fa-window-restore"></i></button>
+                            <button class="nav-bar"><i class="far fa-window-close"></i></button>
+                        </div>
+                    </div>
+                    <div class="bill-top">
+                        <div class="bill-left">
+                            <p>Thực Đơn Tiệc</p>
+                            <div class="menu-original">
+                                <select name="menu-original" id="menu-original" multiple size="10">
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        <div class="bill-center">
+                            <button class="btn-selected" data-id="selectone">></button>
+                            <button class="btn-selected space-btn" data-id="selectall">>></button>
+                            <button class="btn-selected" data-id="deleteone"><</button>
+                            <button class="btn-selected" data-id="deleteall"><<</button>
+                        </div>
+                        <div class="bill-right">
+                            <p>Danh Sách Đã Chọn</p>
+                            <div class="menu-selected">
+                                <select name="menu-selected" id="menu-selected" multiple size="10">
+                                    
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bill-bottom">
+                        <button class="calculative-money">Tính Tiền</button>
+                        
+                        <p >Số Tiền Thanh Toán Là : <span class="print-money">...</span> Đồng</p>
+                    </div>
+                </div>
+                <div class="notification-bill">
+                    <div class="header-notifica">
+                        <i class="far fa-window-close"></i>
+                    </div>
+                    <p>Chi Tiết Các Món Ăn :</p>
+                    <div class="list-bill">
+                        
+                    </div>
+                    <button class="ok-notifica">OK</button>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+   
+
+    <script src="./js/app.js"></script>
+
+</body>
+
+</html>
